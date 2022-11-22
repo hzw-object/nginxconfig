@@ -1,7 +1,7 @@
 #!/bin/sh -l
 time=$(date "+%Y%m%d%H%M%S")
 npm config set registry http://registry.npm.taobao.org
-npm i
+npm ci
 npm run build 
 TAG=latest
 SERVER_NAME=nginxconfig
