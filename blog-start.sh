@@ -1,7 +1,8 @@
 #!/bin/sh -l
 time=$(date "+%Y%m%d%H%M%S")
-npm ci
-npm run build
+npm config set registry http://registry.npm.taobao.org
+npm i
+npm run build 
 TAG=latest
 SERVER_NAME=nginxconfig
 SERVER_PORT=8001
